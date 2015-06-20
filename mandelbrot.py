@@ -65,8 +65,8 @@ def display_mandelbrot():
     img = PhotoImage(width=width, height=height)
     canvas.create_image((width//2, height//2), image=img, state="normal")
 
-    real_range = (-2, 2)
-    imag_range = (-2, 2)
+    real_range = (-2.25, 0.75)
+    imag_range = (-1.5, 1.5)
     precision = 0.05
 
     real_to_x_mapper = make_linear_mapper(real_range, (0, width), int_out=True)
