@@ -69,8 +69,8 @@ def make_color_mapper(max_input):
 
 
 def display_mandelbrot():
-    width = 400
-    height = 400
+    width = 700
+    height = 700
     window = Tk()
     canvas = Canvas(window, width=width, height=height, bg="#ffffff")
     canvas.pack()
@@ -79,7 +79,7 @@ def display_mandelbrot():
 
     real_range = (-2.25, .75)
     imag_range = (-1.5, 1.5)
-    precision = 0.005
+    precision = 0.003
     max_iterations = 20
 
     real_to_x_mapper = make_linear_mapper(real_range, (0, width), int_out=True)
