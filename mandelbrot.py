@@ -62,7 +62,7 @@ def make_color_mapper(max_input):
     
     def mapper(val):
         color_val = color_mapper(val)
-        rgb_vals = (color_val, color_val, 100)
+        rgb_vals = (int(color_val), int(color_val), 100)
         return "#%02x%02x%02x" % rgb_vals
     
     return mapper
